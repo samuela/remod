@@ -1,0 +1,49 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended",
+        "tslint-eslint-rules"
+    ],
+    "rules": {
+        "arrow-return-shorthand": true,
+        "await-promise": true,
+        "deprecation": true,
+        "file-name-casing": [
+            true,
+            "kebab-case"
+        ],
+        "max-classes-per-file": false,
+        "max-line-length": {
+            "options": [
+                80
+            ]
+        },
+        "new-parens": true,
+        "no-angle-bracket-type-assertion": true,
+        "no-boolean-literal-compare": true,
+        "no-duplicate-imports": true,
+        "no-floating-promises": true,
+        "no-non-null-assertion": true,
+        "no-require-imports": true,
+        "no-unnecessary-callback-wrapper": true,
+        "no-unsafe-finally": true,
+        "object-curly-spacing": true,
+        "only-arrow-functions": [
+            true,
+            "allow-named-functions"
+        ],
+        "prefer-conditional-expression": true,
+        "prefer-const": true,
+        "prefer-for-of": true,
+        "prefer-function-over-method": true,
+        "prefer-readonly": true,
+        "promise-function-async": true,
+        "strict-boolean-expressions": true,
+        "triple-equals": true,
+        "no-unnecessary-initializer": true,
+        "no-unnecessary-type-assertion": true,
+        "no-bitwise": false,
+        "object-literal-sort-keys": false,
+        "no-console": false
+    }
+}

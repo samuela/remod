@@ -1,0 +1,28 @@
+{
+  "name": "remod",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "figures": "^3.0.0",
+    "ink": "^2.2.0",
+    "meow": "^5.0.0",
+    "react": "^16.8.6",
+    "userid": "^0.3.1"
+  },
+  "devDependencies": {
+    "@types/meow": "^5.0.0",
+    "@types/node": "^12.0.2",
+    "ts-node": "^8.2.0",
+    "tslint": "^5.16.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "typescript": "^3.4.5"
+  },
+  "scripts": {
+    "lint": "tslint --project tsconfig.json --config tslint.json --format stylish",
+    "build": "tsc && chmod a+x dist/index.js"
+  },
+  "bin": {
+    "remod": "dist/index.js"
+  }
+}
