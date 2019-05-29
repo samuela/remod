@@ -2,9 +2,9 @@
 
 chmod for human beings!
 
-<center>
+<p align="center">
 <a href="https://asciinema.org/a/249047" target="_blank"><img src="https://asciinema.org/a/249047.svg" /></a>
-</center>
+</p>
 
 Install with
 
