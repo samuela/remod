@@ -13,3 +13,17 @@ If UNIX octal permissions get you down, this is the tool for you. Humans were ne
 ```
 npm i -g remod-cli
 ```
+
+## Usage
+
+You can view and interactively edit the permissions of a file with
+
+```
+$ remod foo.txt
+```
+
+If you think that you want to change a file's permissions to 640 but you'd like to preview the changes first, just run
+
+```
+$ remod 640 foo.txt
+```
