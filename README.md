@@ -2,7 +2,9 @@
 
 chmod for human beings!
 
-[![asciicast](https://asciinema.org/a/249047.svg)](https://asciinema.org/a/249047)
+<center>
+<a href="https://asciinema.org/a/249047" target="_blank"><img src="https://asciinema.org/a/249047.svg" /></a>
+</center>
 
 Install with
 
