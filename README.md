@@ -2,6 +2,8 @@
 
 chmod for human beings!
 
+If UNIX octal permissions get you down, this is the tool for you. Humans were never meant to do bit arithmetic in their heads.
+
 <p align="center">
 <a href="https://asciinema.org/a/249047?autoplay=1&loop=1&size=big&speed=1.5"><img src="https://asciinema.org/a/249047.svg" /></a>
 </p>
