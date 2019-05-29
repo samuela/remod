@@ -1,5 +1,5 @@
 {
-  "name": "remod",
+  "name": "remod-cli",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -20,9 +20,12 @@
   },
   "scripts": {
     "lint": "tslint --project tsconfig.json --config tslint.json --format stylish",
-    "build": "tsc && chmod a+x dist/index.js"
+    "prepare": "tsc && chmod a+x dist/index.js"
   },
   "bin": {
     "remod": "dist/index.js"
-  }
+  },
+  "files": [
+    "dist/**/*"
+  ]
 }
