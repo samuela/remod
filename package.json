@@ -7,11 +7,11 @@
     "figures": "^3.0.0",
     "ink": "^2.2.0",
     "meow": "^5.0.0",
-    "react": "^16.8.6",
-    "userid": "samuela/node-userid#node12"
+    "react": "^16.8.6"
   },
   "devDependencies": {
     "@types/meow": "^5.0.0",
+    "@types/react": "^17.0.3",
     "@types/node": "^12.0.2",
     "ts-node": "^8.2.0",
     "tslint": "^5.16.0",

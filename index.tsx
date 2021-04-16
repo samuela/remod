@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { spawnSync } from "child_process";
+import { execSync, spawnSync } from "child_process";
 import { statSync } from "fs";
 import { userInfo } from "os";
 import { resolve } from "path";
@@ -10,8 +10,14 @@ import { AppContext, Box, Color, render, StdinContext, Text } from "ink";
 import meow from "meow";
 import React, { useEffect, useState } from "react";
 
-// @ts-ignore
-import { groupname, username } from "userid";
+function username(uid: number): string {
+  // Trim since we get an extra newline at the end. This command works on both
+  // linux and macos.
+  return execSync(`id -nu ${uid}`).toString().trim();
+}
+function groupname(gid: number): string {
+  return execSync(`getent group ${gid} | cut -d: -f1`).toString().trim();
+}
 
 const ARROW_UP = "\u001B[A";
 const ARROW_DOWN = "\u001B[B";
@@ -566,7 +572,7 @@ function Base(props: {
 }
 
 const CLI_USAGE = `
-remod - chmod for human beings! 💁‍♀️
+remod - chmod for human beings! 💫
 
 Usage
   $ remod <file>
